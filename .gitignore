@@ -1,0 +1,4 @@
+venv/
+.vscode/
+.ipynb_checkpoints/
+python_practice/.ipynb_checkpoints/ipython_practice-checkpoint.ipynb
