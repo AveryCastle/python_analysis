@@ -1,0 +1,17 @@
+from bson.objectid import ObjectId
+
+# The web framework gets post_id from the URL and passes it as a string
+def get(post_id):
+    # Convert from string to ObjectId:
+    document = client.db.collection.find_one({'_id': ObjectId(post_id)})
+
+#삭제
+from bson.objectid import ObjectId
+collection.delete_one({'_id' : ObjectId('~~')})
+
+===============================
+pip uninstall bson
+pip install pymongo==3.6.0
+
+pip install bson
+(bson 버전은 0.5.8)
